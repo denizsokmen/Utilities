@@ -10,7 +10,7 @@
 
 struct NET32 {
 	int32_t  value;
-	operator int () const
+	operator int32_t () const
 	{
 		return( ntohl(value) );
 	}
@@ -23,7 +23,7 @@ struct NET32 {
 
 struct NET16 {
 	int16_t  value;
-	operator int () const
+	operator int16_t () const
 	{
 		return( ntohs(value) );
 	}
